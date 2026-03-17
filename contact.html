@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="contact_page_title">اتصل بي - علاء حبيب</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">علاء حبيب <span class="brand-light" data-i18n="nav_brand_suffix">| تنسيق وورد</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+                <li><a href="about.html" data-i18n="nav_about">من أنا</a></li>
+                <li><a href="samples.html" data-i18n="nav_samples">نماذج الأعمال</a></li>
+                <li><a href="contact.html" class="active" data-i18n="nav_contact">اتصل بي</a></li>
+            </ul>
+            <div class="nav-language">
+                <button class="lang-btn active" data-lang="ar">العربية</button>
+                <span class="lang-separator">|</span>
+                <button class="lang-btn" data-lang="en">English</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 data-i18n="contact_page_title">اتصل بي</h1>
+            <p data-i18n="contact_page_subtitle">للاستفسارات أو طلبات التنسيق، لا تتردد في التواصل</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 data-i18n="contact_info_title">معلومات الاتصال</h3>
+                    
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-i18n="email">البريد الإلكتروني</h4>
+                            <p>habeeb.alaa85@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-i18n="phone">الهاتف</h4>
+                            <p>+963994676881</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-i18n="location">الموقع</h4>
+                            <p data-i18n="location_desc">سوريا (خدمات عن بُعد لجميع الدول)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4 data-i18n="working_hours">ساعات العمل</h4>
+                            <p data-i18n="working_hours_desc">الأحد - الخميس: 9:00 صباحاً - 6:00 مساءً (توقيت سوريا)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 data-i18n="send_message">أرسل رسالة</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="name">الاسم الكامل *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-i18n="email_address">البريد الإلكتروني *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" data-i18n="service_type">نوع الخدمة المطلوبة</label>
+                            <select id="service" name="service">
+                                <option value="thesis" data-i18n="service_thesis">تنسيق أطروحة / رسالة علمية</option>
+                                <option value="paper" data-i18n="service_paper">تنسيق بحث علمي</option>
+                                <option value="report" data-i18n="service_report">تنسيق تقرير فني</option>
+                                <option value="template" data-i18n="service_template">تصميم قالب Word</option>
+                                <option value="other" data-i18n="service_other">أخرى</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-i18n="message">الرسالة *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="urgent" name="urgent">
+                            <label for="urgent" data-i18n="urgent">مشروع عاجل (تسليم خلال 24 ساعة)</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" data-i18n="send_button">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>علاء حبيب</h4>
+                    <p data-i18n="footer_info">تنسيق احترافي لوثائق Microsoft Word<br>متخصص في المستندات الأكاديمية والعلمية</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="quick_links">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">من أنا</a></li>
+                        <li><a href="samples.html" data-i18n="nav_samples">نماذج الأعمال</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">اتصل بي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-i18n="contact_me">تواصل معي</h4>
+                    <p><i class="fas fa-envelope"></i> habeeb.alaa85@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +963994676881</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="copyright">© 2024 علاء حبيب. جميع الحقوق محفوظة. تصميم وإعداد: علاء حبيب</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
